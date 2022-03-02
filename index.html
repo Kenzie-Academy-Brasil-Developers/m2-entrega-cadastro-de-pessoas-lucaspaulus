@@ -24,12 +24,12 @@
 
             <label for="sobrenome">Sobrenome</label>
             <input type="text" name="sobrenome" placeholder="Sobrenome" class="field" />
-
-            <label for="data-nascimento">Data de nascimento</label>
+            
+            <label for="data-nascimento">Data de nascimento</label>   
             <input type="date" name="dataNascimento" class="field" />
 
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Email" class="field" />
+            <input type="email" name="email" placeholder="Email" id="inputEmail" class="field"  />
 
             <label for="contato">Contato</label>
             <input type="text" name="contato" placeholder="Contato" class="field" />
@@ -60,7 +60,16 @@
         </div>
         <ul id="lista-de-alunos"></ul>
     </aside>
-    <script src="assets/js/script.js"></script>
+   <div class="modal modal--hide"> 
+        <div class="modal__content">
+            <h1>Erro!</h1>
+            <div class="modal__close"></div>
+        </div>
+
+    
+   </div> 
+    
+    <script type="module" src="assets/js/script.js"></script>
 </body>
 
 </html>
